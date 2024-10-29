@@ -1,0 +1,37 @@
+"""Возвращает информацию о клиенте."""
+   query {
+       getClient(id: "000") {
+           id
+           name
+           age
+           documents {
+               id
+               type
+               number
+           }
+           relatives {
+               id
+               relationType
+               name
+           }
+       }
+   }
+"""Возвращает список документов клиента по ID."""
+   query {
+       getDocuments(clientId: "000") {
+           id
+           type
+           number
+           issueDate
+           expiryDate
+       }
+   }
+"""Возвращает информацию о родственниках клиента по ID."""
+   query {
+       getRelatives(clientId: "123") {
+           id
+           relationType
+           name
+           age
+       }
+   }

@@ -1,0 +1,13 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: scaletestapp-app-sm
+  namespace: default
+  labels:
+    team: frontend
+spec:
+  endpoints:
+  - port: web
+  selector:
+    matchLabels:
+      app: scaletestapp
