@@ -1,5 +1,5 @@
 
-![InsureTech_технологическая_архитектура_to-be](Exc1/InureTech_to_be.png)
+![InsureTech_технологическая_архитектура_to-be](./InureTech_to_be.png)
 
 # Обоснование/Описание:
 ## Масштабирование
